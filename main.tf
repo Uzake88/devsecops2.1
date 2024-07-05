@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "Uzake"
+    workspaces {
+      name = "fecp-cycle4"
+    }
+  }	 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
